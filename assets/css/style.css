@@ -1,0 +1,258 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}
+
+
+/* CSS reset */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, strong, ul, li, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+nav { display: block; }
+
+body { line-height: 1; }
+
+ul { list-style: none; }
+*{ margin:0; padding:0;}
+li{ list-style:none;}
+img{ border:none;}
+a{ text-decoration:none; }
+.main_content:after{ content:""; clear:both; height:0; display:block; visibility:hidden;}
+/* Page code */
+
+body { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color: #888; 
+	line-height: 30px; text-align: center; max-width: 2550px;}
+
+strong { font-weight: 500; }
+
+
+
+h1 { margin-top: 10px; font-size: 38px; font-weight: 100; color: #fff; line-height: 50px; }
+
+::-moz-selection { background: #f35b3f; color: #fff; text-shadow: none; }
+::selection { background: #f35b3f; color: #fff; text-shadow: none; }
+
+
+.page-content p {font-family: RIDIBatang; margin: 0 0 0 0; color: #fff; color: rgba(36, 36, 36, 0.8); font-size: 19px;}
+.page-content .Nexon {font-family: 'NEXON Lv2 Gothic Bold'; font-weight: 200; font-size: 20px;}
+.page-content a { color: #fff; color: rgba(255, 255, 255, 0.8); border-color: #fff; border-color: rgba(255, 255, 255, 0.8); }
+.page-content a:hover, 
+.page-content a:focus { color: #fff; color: rgba(255, 255, 255, 0.8); }
+
+/* Hamburger button code */
+
+.hamburger-button { position: relative; max-width: 1140px; margin: 0 auto;}
+
+.hamburger-button button {
+	position: absolute; top: 10px; right: 0; width: 40px; height: 40px; 
+	background: none; border: 0; box-shadow: none; 
+	cursor: pointer; vertical-align: middle; z-index: 999;
+}
+.hamburger-button button:focus { outline: 0; }
+
+.hamburger-button button span {
+	display: block; width: 80%; height: 2px; margin: 5px auto; background: rgb(0, 0, 0);
+	transition: all .8s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+.hamburger-button button:hover span,
+.hamburger-button button:focus span { background: #ccc; }
+
+
+/* 회전 애니메이션 */
+/* rotate first span */
+.hamburger-button button span:first-of-type { transform: rotate(45deg) translate(5px, 5px); }
+/* hide second span */
+.hamburger-button button span:nth-of-type(2) { opacity: 0; }
+/* rotate third span */
+.hamburger-button button span:last-of-type { transform: rotate(-45deg) translate(5px, -5px); }
+
+.hamburger-button button.menu-closed span { transform: none; opacity: 1; }
+
+
+/* Menu code */
+
+.top-menu {
+	position: fixed; top: -65px; left: 0; width: 100%; padding: 10px 0; background: rgb(255, 255, 255);
+	box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
+	transition: all .5s cubic-bezier(0.250, 0.250, 0.750, 0.750);
+	z-index: 80;
+}
+
+.top-menu.active { top: 0; }
+
+.top-menu .components { max-width: 1140px; margin: 0 auto; overflow: hidden; }
+
+.top-menu .logo { float: left; width: 20%; text-align: left; }
+
+.top-menu .logo a {
+	display: inline-block; width: 123px; height: 40px; 
+	background: url(../img/logo.png) left center no-repeat; border: 0;
+	text-indent: -999999px;
+}
+
+.top-menu .navigation { float: left; width: 70%; text-align: right; }
+
+.top-menu .navigation li { display: inline-block; }
+
+.top-menu .navigation li a { display: inline-block; padding: 5px 10px; color: rgb(0, 0, 0); border: 0; }
+.top-menu .navigation li a:hover,
+.top-menu .navigation li a:focus { color: #ccc; border: 0; outline: 0; }
+
+/* 메인페이지 배경 */
+
+.page-content {
+	background: url(../img/bg2x.jpg) no-repeat center;
+	height: 100vh; /* 1000px/2550 */
+	width: 100%;
+	background-size: cover;
+}
+.wrap {
+	width: 100%;
+	max-width: 872px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.page-content .main_text img{opacity: 0;}
+.page-content .main_text { position: absolute; top:500px; text-align: center; left: -100px;}
+
+
+/* 컨텐츠 페이지 변경 */
+.main_content >div {float:left; width:calc(50% - 10px); margin-right:20px; box-sizing: border-box; margin-top: 180px;}
+.main_content >div:nth-child(2n){margin-right:0}
+.main_content >div:nth-of-type(n + 1):nth-of-type(-n + 2) {
+	margin-top: 0;
+}
+.title {
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	margin: 100px auto;
+}
+.main_text1{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #a6a6a6;
+	margin: 50px auto;
+	
+}
+.title img{}
+.title h1 {
+
+  font-family: "RIDIBatang";
+  font-size: 50px;
+  color: rgb(61, 61, 61);
+
+
+}
+.main_content div h2{
+	position: relative;
+	padding-bottom: 10px;
+}
+.main_content div h2::after {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 20px;/**텍스트 밑에 선 길이**/
+	height: 1px;
+	background: #a6a6a6;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_content div h2 span {
+	color: #00b6e8;
+}
+.main_content p{font-family: RIDIBatang; }
+
+
+/* 컨텐츠페이지 이미지 애니메이션 */
+/* Shine */
+.main_content figure {
+	position: relative;
+	overflow: hidden;
+}
+.main_content figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.main_content figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+/* footer */
+footer{
+	margin-top: 300px;
+}
+footer .wrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer .wrap address{
+	font-style: normal;
+	font-size: 12px;
+	/*주소쪽 css*/
+}
+
+footer .wrap address span{
+	/*카피라이터쪽 css*/
+}
+
+footer .wrap::before {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 300%;
+	/**텍스트밑에선길이**/
+	height: 1px;
+	background: #a6a6a6;
+	bottom: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+

@@ -1,0 +1,220 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.top-menu .components { max-width: 992px; padding-left: 15px; padding-right: 15px; }
+	
+	.hamburger-button { max-width: 992px; }
+	.hamburger-button button { right: 15px; }
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.top-menu .components { max-width: 768px; padding-left: 15px; padding-right: 15px; }
+	
+	.hamburger-button { max-width: 768px; }
+	.hamburger-button button { right: 15px; }
+
+}
+@media (max-width: 850px) {
+	.main_content >div {
+		float: none;
+		width: calc(100%);
+		margin-right: 20px;
+		box-sizing: border-box;
+		margin-top: 180px;
+		margin: 100px auto 0;
+	}
+}
+@media (max-width: 768px) {
+	
+	.top-menu { top: 0; }
+    .top-menu.active { top: -300px; transition: all 1.2s cubic-bezier(0.250, 0.250, 0.750, 0.750); }
+	
+	.top-menu .components { max-width: 100%; padding-top: 50px; }
+	.top-menu .logo { float: none; width: 100%; text-align: center; }
+	.top-menu .navigation { float: none; width: 100%; text-align: center; }
+	
+	.hamburger-button { width: 40px; }
+	
+	.hamburger-button button span:first-of-type { transform: none; opacity: 1; }
+	.hamburger-button button span:nth-of-type(2) { transform: none; opacity: 1; }
+	.hamburger-button button span:last-of-type { transform: none; opacity: 1; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; }
+	
+	.hamburger-button button.menu-closed span:first-of-type { transform: rotate(45deg) translate(5px, 5px); }
+	.hamburger-button button.menu-closed span:nth-of-type(2) { opacity: 0; }
+	.hamburger-button button.menu-closed span:last-of-type { transform: rotate(-45deg) translate(5px, -5px); }
+	
+	.page-content { padding-top: 80px; padding-bottom: 60px; }
+	.page-content .main_text img{opacity: 1;}
+
+
+	.main_content img{width: 375px; height: 100%;}
+	.main_text1{font-size: 14px;}
+
+	.hamburger-button button{right: 1%;}
+
+	.page-content .wrap .main_text{ 
+		position: absolute; 
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		
+		/* margin-left: -2%; */
+		top: 10vh;
+		left: 0.4vh;
+	}
+
+	.page-content .wrap .main_text p {font-size: 16px;}
+
+	.main_content .Ai_Brief img {margin-top: 90px;}
+	.page-content .main_text img{opacity: 1; margin-bottom: 10px;}
+
+
+	footer .wrap::before {
+		display: block;
+		content: "";
+		position: absolute;
+		width: 100%;
+		/**텍스트밑에선길이**/
+		height: 1px;
+		background: #a6a6a6;
+		bottom: 130px;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+	}
+	
+
+
+	
+}
+
+
+@media (max-width: 575px) {
+	
+	h1 { font-size: 22px; }
+	
+}
+
+
+
+/* Retina-ize images/icons */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	
+	/* logo */
+    .top-menu .logo a {
+    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 123px 33px !important;
+    }
+	
+}
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 430px){
+	
+
+
+	.main_content img{width: 375px; height: 100%;}
+	.main_text1{font-size: 12px;}
+	/* .page-content{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	.page-content .wrap .main_text{
+	    display: inline-block;
+		vertical-align: middle
+	} */
+
+	.page-content .wrap .main_text{ 
+		position: absolute; 
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		top: 10vh;
+		left: 0;
+		/* margin-left: -2%; */
+	}
+
+	.page-content .wrap .main_text p {font-size: 15px;}
+
+	.main_content .Ai_Brief img {margin-top: 25%;}
+	.page-content .main_text img{opacity: 1; margin-bottom: 10px;}
+
+
+	footer .wrap::before {
+		display: block;
+		content: "";
+		position: absolute;
+		width: 100%;
+		/**텍스트밑에선길이**/
+		height: 1px;
+		background: #a6a6a6;
+		bottom: 130px;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+
+		
+	}
+	footer .wrap address {
+		text-align: left;
+		padding: 0;
+		padding-left: 10px;
+	}
+
+}
+
+
+/* <html>
+<head>
+    <style type="text/css">
+        .layer {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            font-size: 50px;
+        }
+        .layer .content {
+            display: inline-block;
+            vertical-align: middle
+        }
+        .layer .blank {
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: middle
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div class="layer">
+        <span class="content">div를 화면 가운데 놓기 gocoder.net</span>
+        <span class="blank"></span>
+    </div>
+ 
+</body>
+</html>
+
+
+출처: https://gocoder.tistory.com/798 [고코더 IT Express] */
