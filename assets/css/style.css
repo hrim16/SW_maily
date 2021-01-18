@@ -364,7 +364,8 @@ footer .wrap address span{
 }
 
 .sub_section > .wrap {
-	text-align: left;
+	text-align: justify;
+	word-break:break-all;
 }
 
 .header_blank {
@@ -387,7 +388,7 @@ footer .wrap address span{
 	color: #000;
 	margin-bottom: 30px;
 	font-weight: 700;
-	
+
 	
 }
 .text_content {
@@ -497,8 +498,9 @@ footer .wrap address span{
 	font-weight: 700;
 	margin-bottom: 30px;
 	display: inline-block;
-border-bottom: 3px solid #00a194;
-margin-top: 30px;
+	border-bottom: 3px solid #00a194;
+	margin-top: 30px;
+	text-indent: 0px;
 }
 .ss {
 	background: #00a194;

@@ -208,11 +208,19 @@ only screen and (                min-resolution: 2dppx) {
 	/* 서브 페이지 */
 
 	.page-content_sub .wrap img{
-		background: url(../img/ebook_Trend_main_s.png) no-repeat;
+		display: none;
+	}
 
+	.page-content_sub .wrap > div{
+
+		display: block;
+		background: url(../img/ebook_Trend_main_s.png) no-repeat;
+		
 		width: 100%;
+		height: 400px;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
+
 	}
 
 }
