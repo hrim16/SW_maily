@@ -1,6 +1,13 @@
 @charset 'utf-8';
 
 @font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
 	font-family: 'NIXGONM-Vb';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
 	font-weight: normal;
@@ -348,6 +355,8 @@ footer .wrap address span{
 }
 
 
+
+
 /**서브페이지 Trend**/
 .page-content_sub .wrap img{
 	background-size: auto;
@@ -371,6 +380,7 @@ footer .wrap address span{
 	font-weight: 700;
 	margin:100px 0 30px ;
 	color: #000;
+	font-family: 'yg-jalnan';
 }
 .main_sub_title {
 	font-size: 20px;
@@ -399,8 +409,25 @@ footer .wrap address span{
 }
 .text_content div.popup span{
 	display: none;
-	color: #fcf;
+	color: #00a194;
 }
+
+
+.text_content .EDGE {
+	text-indent: 0px;
+	
+}
+.text_content .EDGE img {
+	max-width: 100%;
+	
+}
+.text_content .STE{
+	text-indent: 0px;
+}
+.text_content img{
+	max-width: 100%;
+}
+
 
 /**팝업**/
 .text_content div.popup .popup_box {
@@ -440,14 +467,14 @@ footer .wrap address span{
 	display: inline;
 	width: 40px;
 	height: 15px;
-	background: #fcf;
+	background: #00a194;
 	margin-right: 10px;
 }
 .table_img_box {
 	width: 100%;
 	overflow-x: auto;
-	border-top: 3px solid #fcf;
-	border-bottom: 3px solid #fcf;
+	border-top: 3px solid #00a194;
+	border-bottom: 3px solid #00a194;
 }
 .table_img_box img {
 	
@@ -465,15 +492,15 @@ footer .wrap address span{
 	margin-right: 5px;
 }
 .sub_title {
-	color: #fcf;
+	color: #00a194;
 	font-weight: 700;
 	margin-bottom: 30px;
 	display: inline-block;
-border-bottom: 3px solid #fcf;
+border-bottom: 3px solid #00a194;
 margin-top: 30px;
 }
 .ss {
-	background: #fcf;
+	background: #00a194;
 	padding: 5px;
 	color: #fff;
 	font-size: 12px;
