@@ -366,7 +366,7 @@ footer .wrap address span{
 .sub_section > .wrap {
 	text-align: justify;
 	word-break:break-all;
-	width: 100%;
+	
 }
 
 .header_blank {
@@ -375,7 +375,7 @@ footer .wrap address span{
 .sub_section .wrap {
 	padding: 0 10px;
 	box-sizing: border-box;
-	max-width: 781px;
+	max-width: 1200px;
 }
 .main_title {
 	font-size: 30px;
