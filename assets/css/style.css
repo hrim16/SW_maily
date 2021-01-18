@@ -358,14 +358,15 @@ footer .wrap address span{
 
 
 /**서브페이지 Trend**/
-.page-content_sub .wrap img{
-	
+.page-content_sub .wrap{
+	max-width: 2550px;
 	/* display: block; */
 }
 
 .sub_section > .wrap {
 	text-align: justify;
 	word-break:break-all;
+
 	
 }
 
@@ -375,7 +376,7 @@ footer .wrap address span{
 .sub_section .wrap {
 	padding: 0 10px;
 	box-sizing: border-box;
-	max-width: 1200px;
+	max-width: 781px;
 }
 .main_title {
 	font-size: 30px;
