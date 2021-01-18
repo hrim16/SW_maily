@@ -359,13 +359,14 @@ footer .wrap address span{
 
 /**서브페이지 Trend**/
 .page-content_sub .wrap img{
-	background-size: auto;
-	display: block;
+	
+	/* display: block; */
 }
 
 .sub_section > .wrap {
 	text-align: justify;
 	word-break:break-all;
+	width: 100%;
 }
 
 .header_blank {
