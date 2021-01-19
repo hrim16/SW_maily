@@ -489,11 +489,12 @@ footer .wrap address span{
 	display: flex;
 	align-items: center;
 	font-weight: 700;
-	margin: 30px 0 30px;
+	margin: 30px 0 20px;
 } 
 .sub_main_title img {
 	display: block;
 	margin-right: 5px;
+	/* margin-bottom: 10px; */
 }
 .sub_title {
 	color: #00a194;
@@ -501,8 +502,9 @@ footer .wrap address span{
 	margin-bottom: 30px;
 	display: inline-block;
 	border-bottom: 3px solid #00a194;
-	margin-top: 30px;
+	/* margin-top: 10px; */
 	text-indent: 0px;
+	font-size: 19px;
 }
 .ss {
 	background: #00a194;
